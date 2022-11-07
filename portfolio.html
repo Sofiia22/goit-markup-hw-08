@@ -28,8 +28,8 @@
             <nav class="navigation header__navigation">
                 <ul class="navigation__list list">
                     <li class="navigation__item"><a href="./index.html"
-                            class="navigation__link link">Студія</a></li>
-                    <li class="navigation__item"><a href="./portfolio.html" class="navigation__link  navigation__link--current link ">Портфоліо</a>
+                            class="navigation__link navigation__link link">Студія</a></li>
+                    <li class="navigation__item"><a href="./portfolio.html" class="navigation__link navigation__link--current link ">Портфоліо</a>
                     </li>
                     <li class="navigation__item"><a href="./contacts.html" class="navigation__link link ">Контакти</a></li>
                 </ul>
@@ -53,7 +53,105 @@
                     </li>
                 </ul>
             </div>
+            <button type="button" class=" menu-open btn" aria-controls="menu-container" js-open-menu>
+    
+                <svg width="40px" height="40px" aria-label=" Переключатель мобильного меню">
+    
+                    <use class="menu-icon_menu " href="./images/icons.svg#icon-menu_mb">_</use>
+                </svg>
+            </button>
         </div>
+        <div class="mob-menu is-hidden " js-menu-container>
+            <div class="container  mob-wrap">
+                <div class="mob-menu-top">
+                    <button type="button" class=" menu-close  btn" js-close-menu aria-controls="menu-container"
+                        js-close-menu>
+    
+                        <svg width="40px" height="40px" aria-label=" Переключатель мобильного меню">
+                            <use class="menu-icon_cross" href="./images/icons.svg#icon-menu_mb_close">
+                            </use>
+    
+                        </svg>
+    
+                    </button>
+    
+                    <nav class="mob-menu-nav">
+                        <ul class="list mob-menu-list">
+                            <li class="mob-menu-item">
+                                <a class="link mob-menu__link current-mob " href="./index.html">
+                                    Студия
+                                </a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a class="link mob-menu__link" href="./portfolio.html">Портфолио </a>
+    
+                            </li>
+                            <li class="mob-menu-item">
+                                <a class="link mob-menu__link" href="">Контакты</a>
+                            </li>
+    
+    
+                        </ul>
+    
+                    </nav>
+                </div>
+                <div class="mob-botoom">
+                    <div class="mob-menu__connect">
+                        <ul class="list mob-menu-list">
+                            <li class="mob-menu__item">
+    
+                                <a class="link mob-tel__contact" href="tel:+380961111111" class="mob__tel">
+                                    +38 096 111 11 11
+    
+                                </a>
+    
+                            </li>
+                            <li class="mob-menu__item">
+    
+                                <a class="link mob__contact " href="">info@devstudio.com</a>
+    
+    
+    
+    
+                            </li>
+    
+    
+                        </ul>
+    
+                    </div>
+                    <ul class="mob__soc list">
+                        <li class="mob__soc-item">
+                            <a href="" class="mob__soc__link  link">
+    
+                                Instagram
+    
+                            </a>
+                        </li>
+                        <li class="mob__soc-item">
+                            <a href="" class="mob__soc__link  link">
+    
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="mob__soc-item">
+                            <a href="" class="mob__soc__link  link">
+                                Facebook
+    
+                            </a>
+                        </li>
+                        <li class="mob__soc-item">
+                            <a href="" class="mob__soc__link  link">
+                                LinkedIn
+    
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+    
+        </div>
+    </div>
     </header>
 
     <main class="main">

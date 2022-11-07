@@ -11,7 +11,7 @@
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    is-hidden {
+    .is-hidden {
         opacity: 0;
         pointer-events: none;
     }
@@ -23,7 +23,7 @@
     top: 50%;
     left: 50%;
 
-    width: 528px;
+    width: 320x;
     min-height: 581px;
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
