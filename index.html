@@ -52,109 +52,60 @@
                 </li>
             </ul>
             </div>
-            <button type="button" class=" menu-open btn" aria-controls="menu-container" js-open-menu>
+
+            <button type="button" class="menu-button menu-toggle js-open-menu" aril-expanded="false" aria-controls="mobile-menu">
             
                 <svg width="40px" height="40px" aria-label=" Переключатель мобильного меню">
             
-                    <use class="menu-icon_menu " href="./images/icons.svg#icon-menu_mb">_</use>
+                    <use class="mobile-menu__icon" href="./images/icons.svg#icon-menu_mb">_</use>
                 </svg>
             </button>
             </div>
-        <div class="mob-menu is-hidden " js-menu-container>
-            <div class="container  mob-wrap">
-                <div class="mob-menu-top">
-                    <button type="button" class=" menu-close  btn" js-close-menu aria-controls="menu-container" js-close-menu>
-        
-                        <svg width="40px" height="40px" aria-label=" Переключатель мобильного меню">
-                            <use class="menu-icon_cross" href="./images/icons.svg#icon-menu_mb_close">
-                            </use>
-        
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button type="button" class="menu-button menu-toggle js-close-menu" aria-controls="mobile-menu">
+                        <svg class="mobile-menu__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                            <use class="icon-menu-close" href="./images/icons.svg#icon-menu_mb_close"></use>
                         </svg>
+                        </button>
         
-                    </button>
-        
-                    <nav class="mob-menu-nav">
-                        <ul class="list mob-menu-list">
-                            <li class="mob-menu-item">
-                                <a class="link mob-menu__link current-mob " href="./index.html">
-                                    Студия
-                                </a>
-                            </li>
-                            <li class="mob-menu-item">
-                                <a class="link mob-menu__link" href="./portfolio.html">Портфолио </a>
-        
-                            </li>
-                            <li class="mob-menu-item">
-                                <a class="link mob-menu__link" href="">Контакты</a>
-                            </li>
-        
-        
-                        </ul>
-        
-                    </nav>
-                </div>
-                <div class="mob-botoom">
-                    <div class="mob-menu__connect">
-                        <ul class="list mob-menu-list">
-                            <li class="mob-menu__item">
-        
-                                <a class="link mob-tel__contact" href="tel:+380961111111" class="mob__tel">
-                                    +38 096 111 11 11
-        
-                                </a>
-        
-                            </li>
-                            <li class="mob-menu__item">
-        
-                                <a class="link mob__contact " href="">info@devstudio.com</a>
-        
-        
-        
-        
-                            </li>
-        
-        
-                        </ul>
-        
-                    </div>
-                    <ul class="mob__soc list">
-                        <li class="mob__soc-item">
-                            <a href="" class="mob__soc__link  link">
-        
-                                Instagram
-        
-                            </a>
+                    <ul class="mobile-menu__nav">
+                        <li class="mobile-menu__item-nav">
+                            <a class="mobile-menu__link-nav mobile-menu__link-curent" href="./index.html">Студія</a>
                         </li>
-                        <li class="mob__soc-item">
-                            <a href="" class="mob__soc__link  link">
-        
-                                Twitter
-                            </a>
+                        <li class="mobile-menu__item-nav">
+                            <a class="mobile-menu__link-nav" href="./portfolio.html">Портфоліо</a>
                         </li>
-                        <li class="mob__soc-item">
-                            <a href="" class="mob__soc__link  link">
-                                Facebook
-        
-                            </a>
-                        </li>
-                        <li class="mob__soc-item">
-                            <a href="" class="mob__soc__link  link">
-                                LinkedIn
-        
-                            </a>
+                        <li class="mobile-menu__item-nav">
+                            <a href="" class="mobile-menu__link-nav">Контакти</a>
                         </li>
                     </ul>
-                </div>
-        
-            </div>
-        
-        </div>
-        
-        
-        
-        
-        
-        </div>
+                    
+                    <ul class="mobile-menu__contacts">
+                        <li class="mobile-menu__item-contacts">
+                            <a href="tel:+380961111111" class="mobile-menu__link-phone">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-menu__item-contacts">
+                            <a href="mailto:info@devstudio.com" class="mobile-menu__link-email">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="mobile-menu__socials">
+                        <li class="mobile-menu__item-socials">
+                            <a class="mobile-menu__link-socials" href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        </li>
+                        <li class="mobile-menu__item-socials">
+                            <a class="mobile-menu__link-socials" href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+                        </li>
+                        <li class="mobile-menu__item-socials">
+                            <a class="mobile-menu__link-socials" href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        </li>
+                        <li class="mobile-menu__item-socials">
+                            <a class="mobile-menu__link-socials" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        </li>
+                    </ul>
+                    </div>
+                    
+
             </header>
     <main>
         <!-- Герой -->
@@ -169,7 +120,7 @@
             <div class="container">
                 <h2 class="visually__hidden">Наші переваги</h2>
                 <ul class="feature__list list">
-                    <li style="width:270px;" class="feature__item">
+                    <li class="feature__item">
                         <div class="feature__box">
                             <svg class="feature__icon" width="70" height="70">
                             <use href="./images/icons.svg#icon-Group"></use>
@@ -179,7 +130,7 @@
                         <p class="feature__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
                         </p>
                     </li>
-                    <li style="width:270px;" class="feature__item">
+                    <li class="feature__item">
                         <div class="feature__box">
                             <svg class="feature__icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-clock"></use>
@@ -190,7 +141,7 @@
                             Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
                         </p>
                     </li>
-                    <li style="width:270px;" class="feature__item">
+                    <li class="feature__item">
                         <div class="feature__box">
                             <svg class="feature__icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-diagram"></use>
@@ -201,7 +152,7 @@
                             Так само консультація з широким активом значною мірою зумовлює.
                         </p>
                     </li>
-                    <li style="width:270px;" class="feature__item">
+                    <li class="feature__item">
                         <div class="feature__box">
                             <svg class="feature__icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
@@ -474,7 +425,7 @@
             <div class="container">
                 <h3 class="section__title">Постійні клієнти</h3>
                 <ul class="clients list">
-                    <li style="width: 170px;" class="clients__item">
+                    <li class="clients__item">
                         <a href="" class="clients__link">
                             <svg class="clients__icon" width="106px" height="60">
                                 <use href="./images/icons.svg#icon-Logo12"></use>
@@ -482,7 +433,7 @@
                         </a>
 
                     </li>
-                    <li style="width:170px;" class="clients__item">
+                    <li class="clients__item">
                     <a href="" class="clients__link">
                     <svg class="clients__icon" width="106px" height="60">
                         <use href="./images/icons.svg#icon-Logo2"></use>
@@ -490,7 +441,7 @@
                     </a>
                     
                     </li>
-                    <li style="width:170px;" class="clients__item">
+                    <li class="clients__item">
                         <a href="" class="clients__link">
                         <svg class="clients__icon" width="106px" height="60">
                             <use href="./images/icons.svg#icon-Logo3"></use>
@@ -498,7 +449,7 @@
                         </a>
                     
                     </li>
-                    <li style="width:170px;" class="clients__item">
+                    <li class="clients__item">
                         <a href="" class="clients__link">
                         <svg class="clients__icon" width="106px" height="60">
                             <use href="./images/icons.svg#icon-Logo4"></use>
@@ -506,7 +457,7 @@
                         </a>
                     
                     </li>
-                    <li style="width:170px;" class="clients__item">
+                    <li class="clients__item">
                         <a href="" class="clients__link">
                         <svg class="clients__icon" width="106px" height="60">
                             <use href="./images/icons.svg#icon-Logo5"></use>
@@ -514,7 +465,7 @@
                         </a>
                     
                     </li>
-                    <li style="width:170px;" class="clients__item">
+                    <li class="clients__item">
                         <a href="" class="clients__link">
                         <svg class="clients__icon" width="106px" height="60">
                             <use href="./images/icons.svg#icon-Logo6"></use>
@@ -532,6 +483,7 @@
     </main>
      <footer class="footer">
         <div class="container footer__container">
+            <div class="wraper">
             <div class="contact__wrap">
             <section class="footer__section">
                 <a href="/" class="footer__logo"><span class="footer__web">Web</span><span
@@ -555,7 +507,7 @@
                               </address>
                              </section>
                              </div>
-
+                             </div>
                              <div class="footer__soc">
                                 <h3 class="footer__title">приєднуйтесь</h3>
                                 <ul class="footer__soc-list list">
@@ -593,8 +545,8 @@
                                     </li>
 
                                 </ul>
+</div>
 
-                             </div>
                             <div class="footer__box">
                                 <h2 class="footer__text">Підпишіться на розсилку</h2>
                                 <form class="footer__form">
@@ -613,6 +565,7 @@
                                 </form>
                             </div>
                              </div>
+                          
 
      </footer>
 

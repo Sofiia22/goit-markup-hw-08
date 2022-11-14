@@ -1,6 +1,6 @@
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: #F5F4FA;
 
     &__list {
@@ -83,4 +83,8 @@
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 50px;
+    @media screen and (max-width: 1200px) {
+                font-size: 28px;
+                line-height: 1.18;
+        }
 }
